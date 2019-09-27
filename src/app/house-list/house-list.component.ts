@@ -23,7 +23,7 @@ import { HousesService } from "../shared/orders.service";
   styleUrls: ["./house-list.component.css"]
 })
 export class HouseListComponent implements OnInit {
-  constructor(private housesService: HousesService) {}
+  constructor( housesService: HousesService) {}
 
   ngOnInit() {
     this.getHouseOrders();

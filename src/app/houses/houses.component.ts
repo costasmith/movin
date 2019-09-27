@@ -1,6 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { NgForm } from "@angular/forms";
 import { HousesService } from "../shared/orders.service";
+// import { HousesService } from "../shared/orders.service";
 
 @Component({
   selector: "app-houses",
@@ -8,7 +9,7 @@ import { HousesService } from "../shared/orders.service";
   styleUrls: ["./houses.component.css"]
 })
 export class HousesComponent implements OnInit {
-  constructor(private housesService: HousesService) {}
+  constructor( housesService: HousesService) {}
 
   ngOnInit() {}
 
