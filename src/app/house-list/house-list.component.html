@@ -1,0 +1,39 @@
+<table>
+  <thead>
+    <tr>
+      <th>House No.</th>
+      <th>Name</th>
+      <th>House List</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let house of houseOrders">
+      <td>
+        {{ order.payload.doc.data().orderNumber }}
+      </td>
+      <td>{{ order.payload.doc.data().customerName }}</td>
+      <td>
+        <span *ngFor="let house of order.payload.doc.data().houseOrder">
+          {{ house }}
+        </span>
+      </td>
+      <td
+        [hidden]="order.payload.doc.data().completed"
+        (click)="markCompleted(order)"
+      >
+        <i class="material-icons">check</i>
+      </td>
+      <td
+        [hidden]="order.payload.doc.data().completed"
+        (click)="deleteOrder(order)"
+      >
+        <i class="material-icons">delete_forever</i>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li></li>
+</ul>

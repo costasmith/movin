@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Costa's Portfolio</title>
+    <!-- <link rel="stylesheet" href="new.css"> -->
+    <style> body { margin:0px;
+   padding:0px;
+    /* background-image: url(backy.png); */
+    background-color: rgba(37, 41, 47, .9);
+    /* background-image: linear-gradient(gray, grey, white); */
+    background-size: cover;
+    /* background-image: image(backy.png); */
+
+    }
+
+/* main */
+header {
+    height: 360px;
+    z-index: 10;
+}
+.header-banner {
+    background-color: #333;
+    /* background-image: repeating-linear-gradient(white, black, gray); */
+    background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+}
+
+header h1 {
+    background-color: rgba(37, 41, 47, .9);
+    color: white;
+    padding: 0 1rem;
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    font-size: 45px;
+    opacity: .8;
+    border-radius: 20px
+}
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+nav {
+    width: 100%;
+    height: 60px;
+    background: #292f36;
+    postion: fixed;
+    z-index: 10;
+}
+
+nav div {
+    color: white;
+    font-size: 2rem;
+    line-height: 60px;
+    position: absolute;
+    top: 0;
+    left: 2%;
+    visibility: hidden;
+}
+.visible-title {
+    visibility: visible;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0 2% auto 0;
+    padding-left: 0;
+    /* text-align: center; */
+    max-width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+nav ul li {
+    display: inline-block;
+    line-height: 60px;
+    margin-left: 10px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #a9abae;
+}
+
+/* demo content */
+body {
+    color: #292f36;
+    font-family: helvetica;
+    line-height: 1.6;
+}
+.content{
+    margin: 0 auto;
+    padding: 4rem 0;
+    width: 960px;
+    max-width: 100%;
+}
+article {
+    float: left;
+    width: 720px;
+    /* background-color: gradient(blue, green); */
+}
+article h1 {
+  color: white;
+}
+article a {
+  color: white;
+  text-decoration: none;
+}
+article p:first-of-type {
+    margin-top: 0;
+}
+aside {
+    float: right;
+    width: 120px;
+}
+p img {
+    max-width: 100%;
+}
+p {
+  padding: 15px;
+  background-color: rgba(21, 33, 45, .9) ;
+  border-radius: 13px;
+  color: white;
+}
+
+@media only screen and (max-width: 960px) {
+    .content{
+        padding: 2rem 0;
+    }
+    article {
+        float: none;
+        margin: 0 auto;
+        width: 96%;
+        /* background-color: green; */
+    }
+    article:last-of-type {
+        margin-bottom: 3rem;
+    }
+    aside {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+img {
+  size: 15%
+}
+</style>
+  </head>
+  <body>
+
+
+<header>
+
+    <div class="header-banner">
+        <h1>DaCosta Smith - Full Stack Developer</h1>
+        <!-- <h2>Full Stack Developer</h2> -->
+    </div>
+    <div class="clear"></div>
+    <nav>
+        <div class="site-title">Portfolio</div>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/dacosta-smith/">LinkedIn</a></li>
+            <li><a href="https://jobtracker12345.herokuapp.com">AngularJs Project</a></li>
+            <li><a href="https://quiet-spire-14884.herokuapp.com">jQuery Project</a></li>
+            <li><a href="">Contact Me</a></li>
+        <ul>
+    </nav>
+</header>
+
+<section class="content">
+    <article>
+        <h1>App: Job Tracker</h1>
+        <a href="https://jobtracker12345.herokuapp.com"> Check me out!</a>
+
+        <p>Technologies used: AnuglarJS, MongoDB</p>
+        <p><img src="photos/tracker.png"></p>
+        <p> Job Tracker created using AngularJS<p>
+    </article>
+
+    <article>
+      <h1> On going projects </h1>
+      <ul>
+        <li> <a href="https://play.google.com/store/apps/details?id=com.zista.br.mathza"> MATHZA</a></li>
+        <li> <a href="https://play.google.com/store/apps/details?id=com.gamebizz.skywar"> SKYWAR</a> </li>
+      </ul>
+      <!-- <a href="https://play.google.com/store/apps/details?id=com.gamebizz.skywar">Skywar</a> -->
+
+
+    </article>
+
+    <aside>
+        <a href="https://jobtracker12345.herokuapp.com">
+        <img src="https://cdn.tutsplus.com/net/uploads/2013/08/github-collab-retina-preview.gif"></a>
+        <!-- <img src=""> -->
+    </aside>
+</section>
+
+</body>
+</html>
